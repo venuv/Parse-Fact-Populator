@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Fact Collector",
+    "description": "Chrome plugin collects facts in customizable scheme and publishes to Parse",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "olympics.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "collect.js"
+        ]
+    },
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ]
+}

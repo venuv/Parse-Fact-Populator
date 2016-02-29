@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+
+  </head>
+
+  <body>
+
+
+<!--
+    <form action="" method="post" id="customtheme" onSubmit= "parsePost()">
+
+      <div id ="sample">
+      </div>
+      
+      <p>
+	<input type="submit" name="submit" value="Submit_New" id="submitbutton"/>
+	</p>
+    </form>
+-->
+<!-- 
+ -popup.js will inset schema of structured content into
+div element with id 'status' for Parse publish
+ - Store button triggers publish
+-->
+    <div id="factoids">
+    </div>
+    <button>
+      Store in Olympics DB
+    </button>
+
+    <div id="status"></div>
+    <img id="image-result" hidden>
+  </body>
+</html>
+
